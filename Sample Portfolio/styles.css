@@ -1,0 +1,226 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-image: url('redtheme.jpg');
+  background-size: cover;
+  background-position: left;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #855656;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, #660000, #330000);
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Hero Section Styles */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero Section Styles continued */
+.hero .carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Ensure carousel is behind the content overlay */
+}
+
+.hero .carousel-inner {
+  height: 100%;
+}
+
+.hero .carousel-item {
+  height: 100%;
+}
+
+.hero .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2; /* Ensure content is above the carousel */
+  color: #fff;
+  text-align: center;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #660000, #330000);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #330000, #660000);
+  transform: scale(1.05);
+}
+
+/* Skills and Abilities Section */
+.skills {
+  background-color: #330000;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* About Me Section */
+.about-me {
+  background-color: #660000;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-me p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Section Title Styles */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #660000;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Additional Styles */
+.bg-light {
+  background: #f8f9fa;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Heading Writings */
+.heading-writing {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #660000;
+}
+
+.heading-writing span {
+  color: #fff;
+}

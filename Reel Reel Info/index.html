@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reelreels - Your Ultimate Sports News Source</title>
+    <style>
+  body {
+    background-image: url("https://i.pinimg.com/736x/d9/7d/8c/d97d8c3bacf10278d1878377f82c7251.jpg");
+  }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            background: url('/api/placeholder/1200/400') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .news-item {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 1rem;
+        }
+
+        .news-content h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input[type="email"] {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .contact-form button {
+            padding: 0.5rem 1rem;
+            background-color: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Reelreels</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#football">Football</a></li>
+                    <li><a href="#basketball">Basketball</a></li>
+                    <li><a href="#tennis">Tennis</a></li>
+                    <li><a href="#more">More Sports</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Reelreels </h1>
+                <p>Your ultimate source for the latest sports news and updates</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="news-grid">
+                <article class="news-item">
+                    <img src="https://i.ndtvimg.com/i/2017-12/icc-world-cup-afp_806x605_71513013935.jpg" alt="Cricket Sizzle">
+                    <div class="news-content">
+                        <h3><a href="https://www.instagram.com/reel/C80A452S_xv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">THE TROPHY SNATCHER 👀🏆</a></h3>
+                        <p></p>
+                        
+                    </div>
+                </article>
+                <article class="news-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mUHJut5zLsn2pX_Q2DbspooID4pj5GMPEA&s" alt="Wrestle Majors">
+                    <div class="news-content">
+                        <h3><a href="https://www.instagram.com/reel/C7QtuR8vhUJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">I knew I'd be in the UFC since I started my career~mcgregor🦍</a></h3>
+                        <p></p>
+                        
+                    </div>
+                </article>
+                <article class="news-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTAT5h3fG3oTFrwkGdP6QmlaV2_J_r65eDQ&s" alt="Team mcgregor🦍">
+                    <div class="news-content">
+                        <h3><a href="https://www.instagram.com/reel/C7QtuR8vhUJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Born to be the champion🥊🦁</a></h3>
+                        <p></p>
+                        
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="mailto:reelreels123@gmail.com" class="btn btn-contact">Contact Us</a>
+                </div>
+                <div class="col-md-4">
+                  
+                
+                </div>
+              </div>
+            </div>
+          </footer>
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Reelreels All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsItems = document.querySelectorAll('.news-item');
+            newsItems.forEach((item, index) => {
+                item.style.animation = `fadeIn 0.5s ease-out ${index * 0.2}s forwards`;
+                item.style.opacity = '0';
+            });
+        });
+    </script>
+</body>
+</html>
